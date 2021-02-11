@@ -9,7 +9,7 @@ body, h2 {
   font-family: 'Almarai', sans-serif;
 }
 
-.introbox {
+.intro {
   height: 100vh;
   background-image: url("https://i.postimg.cc/cLhq6JyR/pexels-wendy-van-zyl-1112048-1.jpg");
   background-repeat: no-repeat;
@@ -17,15 +17,12 @@ body, h2 {
   color: white;
 }
 
-.menu {
-  padding-top: 2vh;
-  width: 100%;
-}
-
-.logo {
-  display: inline-block;
-  padding-left: 10vw;
-  padding-top: 5vh;
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 50px;
 }
 
 .logo h2 {
@@ -34,16 +31,13 @@ body, h2 {
 }
 
 .nav {
-  display: inline-block;
-  padding-left: 50vw;
-  max-width: 100%;
+  padding-top: 31.5px;
 }
 
 .nav a {
-  display: inline-block;
   text-decoration: none;
+  padding-left: 20px;
   color: white;
-  padding-right: 20px;
 }
 
 .text {
@@ -87,33 +81,35 @@ body, h2 {
   color: #7f8c8d;
 }
 
-.cards {
+.services-box {
   display: -ms-flexbox;
   display: flex;
-  margin-top: 7%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.description {
+  padding: 5% 8%;
   text-align: center;
-  margin: 10% 10%;
 }
 
-.responsive-web {
-  padding: 0 10%;
+.description h2 {
+  padding-top: 30px;
 }
 
-.cards i {
-  font-size: 8vh;
-  border: solid orange;
-  border-radius: 50%;
-  padding: 10px;
-  color: orange;
-}
-
-.cards h2 {
-  margin: 15% 0;
-}
-
-.cards p {
-  color: #7f8c8d;
+.description p {
   font-style: italic;
+  color: #7f8c8d;
+}
+
+.services-box i {
+  font-size: 40px;
+  color: orange;
+  width: 80px;
+  height: 80px;
+  border: solid 2px orange;
+  border-radius: 50%;
+  padding-top: 20px;
 }
 
 /* Portfolio */
@@ -123,7 +119,7 @@ body, h2 {
 
 .portfoliotext {
   text-align: center;
-  padding: 5% 0;
+  padding-top: 5%;
 }
 
 .portfoliotext h1 {
@@ -135,31 +131,19 @@ body, h2 {
   color: #7f8c8d;
 }
 
-.first-row {
+.portfolio-section {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  padding: 10%;
-  padding-top: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
+  padding: 50px;
 }
 
 .card {
   background-color: #fff;
-  margin: 0 2%;
-}
-
-.second-row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  padding: 10%;
-  padding-top: 0;
-  -ms-flex-pack: center;
-      justify-content: center;
+  margin: 5%;
 }
 
 .imag {
