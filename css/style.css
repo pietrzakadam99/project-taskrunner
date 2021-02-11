@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Intro */
+body, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.introbox {
+  height: 100vh;
+  background-image: url("https://i.postimg.cc/90VN71gN/pexels-fauxels-3183183.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu {
+  padding-top: 5%;
+  width: 100%;
+}
+
+.logo {
+  padding-left: 10vw;
+}
+
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  padding-right: 10vw;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Services */
+/*# sourceMappingURL=style.css.map */
