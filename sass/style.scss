@@ -114,3 +114,34 @@ body, h2 {
 
 /* Footer */
 
+footer {
+    width: 100%;
+    margin: auto;
+}
+
+.footerlogo {
+    display: inline-block;
+    padding-left: 13%;
+}
+
+.footerbox ul {
+    display: inline-block;
+    text-align: center;
+}
+
+.media li {
+    font-size: 0;
+    display: inline-block;
+    margin: 3px;
+    text-align: center;
+}
+
+.media li i {
+    font-size: 20px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: #2f3640;
+    border-radius: 50%;
+    padding: 10px;
+}
