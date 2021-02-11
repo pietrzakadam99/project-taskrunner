@@ -44,4 +44,73 @@ body, h2 {
 
 /* Services */ 
 
+.service-title {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    margin-top: 7%;
+    text-align: center;
+    margin: 10% 10%;
+}
+
+.responsive-web {
+    padding: 0 10%;
+}
+
+.cards i {
+    font-size: 8vh;
+    border: solid orange;
+    border-radius: 50%;
+    padding: 10px;
+    color: orange;
+}
+
+.cards h2 {
+    margin: 15% 0;
+}
+
+/* Portfolio */ 
+
+.portfolio {
+    background-color: #eee;
+}
+
+.portfoliotext {
+    text-align: center;
+    padding: 10% 0;
+}
+
+.first-row  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10%;
+    padding-top: 0;
+}
+
+.card {
+    background-color: #fff;
+}
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10%;
+    padding-top: 0;
+}
+
+.imag {
+    height: 300px;
+    width: 100%;
+}
+
+.card-image {
+    max-width: 300px;
+}
+
+/* Footer */
 
