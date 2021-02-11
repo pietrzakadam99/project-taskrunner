@@ -7,31 +7,44 @@
 body, h2 {
     margin: 0;
     padding: 0;
+    font-family: 'Almarai', sans-serif;;
 }
 
 .introbox {
     height: 100vh;
-    background-image: url('https://i.postimg.cc/90VN71gN/pexels-fauxels-3183183.jpg');
+    background-image: url('https://i.postimg.cc/cLhq6JyR/pexels-wendy-van-zyl-1112048-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
 .menu {
-    padding-top: 5%;
+    padding-top: 2vh;
     width: 100%;
 }
 
 .logo {
+    display: inline-block;
     padding-left: 10vw;
+    padding-top: 5vh;
 }
+
+.logo h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+}
+
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10vw;
+    display: inline-block;
+    padding-left: 50vw;
+    max-width: 100%;
 }
 
 .nav a {
+    display: inline-block;
     text-decoration: none;
+    color: white;
+    padding-right: 20px;
 }
 
 .text {
@@ -42,11 +55,37 @@ body, h2 {
     text-align: center;
 }
 
+.text h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.text p {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.text button {
+    padding: 20px 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f1c40f;
+}
 /* Services */ 
 
 .service-title {
     margin-top: 7%;
     text-align: center;
+}
+
+.service-title h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.service-title p {
+    font-style: italic;
+    color: #7f8c8d;
 }
 
 .cards {
@@ -72,6 +111,11 @@ body, h2 {
     margin: 15% 0;
 }
 
+.cards p {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
 /* Portfolio */ 
 
 .portfolio {
@@ -80,27 +124,37 @@ body, h2 {
 
 .portfoliotext {
     text-align: center;
-    padding: 10% 0;
+    padding: 5% 0;
+}
+
+.portfoliotext h1 {
+    font-size: 50px;
+}
+
+.portfoliotext p {
+    font-style: italic;
+    color: #7f8c8d;
 }
 
 .first-row  {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     padding: 10%;
     padding-top: 0;
+    justify-content: center;
 }
 
 .card {
     background-color: #fff;
+    margin: 0 2%;
 }
 
 .second-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     padding: 10%;
     padding-top: 0;
+    justify-content: center;
 }
 
 .imag {
@@ -112,6 +166,20 @@ body, h2 {
     max-width: 300px;
 }
 
+.card-body {
+    text-align: center;
+}
+
+.card-body h5 {
+    font-size: 20px;
+}
+
+.card-body p {
+    font-size: 16px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
 /* Footer */
 
 footer {
@@ -121,12 +189,19 @@ footer {
 
 .footerlogo {
     display: inline-block;
-    padding-left: 13%;
+    padding-left: 15%;
+    text-align: left;
 }
 
 .footerbox ul {
     display: inline-block;
     text-align: center;
+}
+
+
+.mediabox {
+    display: inline-block;
+    padding: 0 7%;
 }
 
 .media li {
@@ -144,4 +219,18 @@ footer {
     background-color: #2f3640;
     border-radius: 50%;
     padding: 10px;
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+    .first-row, .second-row {
+        flex-direction: column;
+    }
+    .card-image {
+        max-width: 100%;
+    }
+    .card {
+        margin-top: 10%;
+    }
 }
