@@ -10,6 +10,12 @@ body, h2 {
     font-family: 'Almarai', sans-serif;;
 }
 
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 .intro {
     height: 100vh;
     background-image: url('https://i.postimg.cc/cLhq6JyR/pexels-wendy-van-zyl-1112048-1.jpg');
@@ -18,7 +24,7 @@ body, h2 {
     color: white;
 }
 
-.container {
+.intro-box {
     display: flex;
     justify-content: space-between;
     padding: 50px;
@@ -28,10 +34,13 @@ body, h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 50px;
 }
+
 .nav {
-    padding-top: 31.5px;
+    display: flex;
+    align-items: center;
 }
-.nav a{
+
+.nav a {
     text-decoration: none;
     padding-left: 20px;
     color: white;
@@ -104,7 +113,7 @@ body, h2 {
     height: 80px;
     border: solid 2px orange;
     border-radius: 50%;
-    padding-top: 20px;
+    line-height: 80px;
 }
 
 /* Portfolio */ 
@@ -115,7 +124,7 @@ body, h2 {
 
 .portfoliotext {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 50px;
 }
 
 .portfoliotext h1 {
@@ -130,14 +139,14 @@ body, h2 {
 .portfolio-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 50px;
 }
 
 
 .card {
     background-color: #fff;
-    margin: 5%;
+    margin-bottom: 50px;
 }
 
 .imag {
@@ -172,19 +181,18 @@ footer {
 
 .footerlogo {
     display: inline-block;
-    padding-left: 15%;
-    text-align: left;
 }
 
-.footerbox ul {
-    display: inline-block;
-    text-align: center;
+.footerbox {
+    position: relative;
 }
-
 
 .mediabox {
-    display: inline-block;
-    padding: 0 7%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
 }
 
 .media li {
@@ -192,6 +200,11 @@ footer {
     display: inline-block;
     margin: 3px;
     text-align: center;
+}
+
+.media {
+    display: inline-block;
+    padding: 0;
 }
 
 .media li i {
