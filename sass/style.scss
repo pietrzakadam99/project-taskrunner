@@ -124,7 +124,7 @@ body, h2 {
 
 .portfoliotext {
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .portfoliotext h1 {
@@ -140,13 +140,12 @@ body, h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px;
 }
-
 
 .card {
     background-color: #fff;
     margin-bottom: 50px;
+    width: 350px;
 }
 
 .imag {
@@ -155,7 +154,7 @@ body, h2 {
 }
 
 .card-image {
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .card-body {
@@ -179,20 +178,10 @@ footer {
     margin: auto;
 }
 
-.footerlogo {
-    display: inline-block;
-}
-
-.footerbox {
-    position: relative;
-}
-
-.mediabox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 10px;
+.footerbox .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .media li {
@@ -200,11 +189,6 @@ footer {
     display: inline-block;
     margin: 3px;
     text-align: center;
-}
-
-.media {
-    display: inline-block;
-    padding: 0;
 }
 
 .media li i {
