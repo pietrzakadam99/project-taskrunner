@@ -97,16 +97,16 @@ body, h2 {
       justify-content: space-around;
 }
 
-.description {
-  padding: 5% 8%;
+.case {
+  padding: 50px 20px;
   text-align: center;
 }
 
-.description h2 {
+.case h2 {
   padding-top: 30px;
 }
 
-.description p {
+.case p {
   font-style: italic;
   color: #7f8c8d;
 }
@@ -152,7 +152,7 @@ body, h2 {
 .card {
   background-color: #fff;
   margin-bottom: 50px;
-  width: 350px;
+  width: 30%;
 }
 
 .imag {
@@ -161,21 +161,24 @@ body, h2 {
 }
 
 .card-image {
-  max-width: 350px;
+  max-width: 100%;
 }
 
 .card-body {
   text-align: center;
+  padding: 20px;
 }
 
 .card-body h5 {
   font-size: 20px;
+  margin: 0;
 }
 
 .card-body p {
   font-size: 16px;
   font-style: italic;
   color: #7f8c8d;
+  margin: 0;
 }
 
 /* Footer */
@@ -211,16 +214,27 @@ footer {
 }
 
 /* Media */
-@media (max-width: 767px) {
-  .first-row, .second-row {
-    -ms-flex-direction: column;
-        flex-direction: column;
+@media (max-width: 992px) {
+  .card {
+    width: 48%;
   }
+}
+
+@media (max-width: 768px) {
   .card-image {
     max-width: 100%;
   }
   .card {
-    margin-top: 10%;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .services-box {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .portfolio-section {
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
